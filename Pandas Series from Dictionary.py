@@ -31,7 +31,8 @@ import pandas as pd
 # print(my_series.tail(2))
 # print(my_series.memory_usage())
 
-sp500 = pd.read_csv('S_P500_Prices.csv',squeeze=False)
+# sp500 = pd.read_csv('S_P500_Prices.csv',squeeze=True) Creates Data series
+sp500 = pd.read_csv('S_P500_Prices.csv',squeeze=False)  # Creates dataframe
 print(sp500)
 print(type(sp500))
 
